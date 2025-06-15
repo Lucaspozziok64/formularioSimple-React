@@ -14,14 +14,14 @@ function App() {
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
               <Navbar.Text className="text-white">
-                Signed in as: <a href="#login" className="text-danger">Mark Otto</a>
+                Inicie Sesion: <a href="#login" className="text-danger">Form</a>
               </Navbar.Text>
             </Navbar.Collapse>
           </Container>
         </Navbar>
       </header>
       <main className="container my-5">
-        <h1 className="text-center">Formulario</h1>
+        <h1 className="text-center text-white">Formulario</h1>
         <Formulario></Formulario>
       </main>
       <footer className="bg-dark text-white p-1 text-center">

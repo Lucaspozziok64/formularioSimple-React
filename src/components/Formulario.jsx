@@ -1,5 +1,6 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import "../App.css"
 
 const Formulario = () => {
   return (
@@ -24,9 +25,11 @@ const Formulario = () => {
             Nunca compartiremos su correo electrónico con nadie más.
           </Form.Text>
         </Form.Group>
-        <Button variant="primary" type="submit" className="d-flex justify-content-end">
-          Enviar
-        </Button>
+        <div className="d-flex justify-content-end">
+          <Button variant="primary" type="submit" className="mb-1">
+            Enviar
+          </Button>
+        </div>
       </Form>
     </section>
   );
