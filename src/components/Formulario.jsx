@@ -4,7 +4,7 @@ import "../App.css"
 
 const Formulario = () => {
   return (
-    <section className="container bg-secondary">
+    <section className="container bg-secondary rounded-3">
       <Form>
         <Form.Group className="mb-3" controlId="formBasicNombre">
           <Form.Label>Nombre</Form.Label>
