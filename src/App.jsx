@@ -14,7 +14,7 @@ function App() {
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
               <Navbar.Text className="text-white">
-                Inicie Sesion: <a href="#login" className="text-danger">Form</a>
+                Formulario Regsitro
               </Navbar.Text>
             </Navbar.Collapse>
           </Container>
