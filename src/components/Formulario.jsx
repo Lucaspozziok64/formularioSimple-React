@@ -19,6 +19,10 @@ const Formulario = () => {
     } else {
       //Aqui debo agregar mensaje de formulario enviado y limpiar los campos
       alert('Formulario Enviado')
+      setApellido('')
+      setNombre('')
+      setDni('')
+      setEmail('')
     }
   }
 
@@ -60,9 +64,6 @@ const Formulario = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <Form.Text className="text-muted">
-            Nunca compartiremos su correo electrónico con nadie más.
-          </Form.Text>
         </Form.Group>
         <div className="d-flex justify-content-end">
           <Button variant="primary" type="submit" className="mb-1">
