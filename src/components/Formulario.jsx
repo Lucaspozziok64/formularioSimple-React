@@ -12,7 +12,6 @@ const Formulario = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Aqui debo validar los datos del form");
 
     if (!nombre || !apellido || !dni || !email) {
       Swal.fire({
