@@ -13,6 +13,13 @@ const Formulario = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log('Aqui debo validar los datos del form')
+
+    if(!nombre || !apellido || !dni || !email) {
+      alert('Debes completar todos los campos del form');
+    } else {
+      //Aqui debo agregar mensaje de formulario enviado y limpiar los campos
+      alert('Formulario Enviado')
+    }
   }
 
   return (
