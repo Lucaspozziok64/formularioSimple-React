@@ -2,29 +2,38 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "../App.css";
 import { useState } from "react";
+import Swal from "sweetalert2";
 
 const Formulario = () => {
-
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
   const [dni, setDni] = useState("");
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log('Aqui debo validar los datos del form')
+    e.preventDefault();
+    console.log("Aqui debo validar los datos del form");
 
-    if(!nombre || !apellido || !dni || !email) {
-      alert('Debes completar todos los campos del form');
+    if (!nombre || !apellido || !dni || !email) {
+      Swal.fire({
+        title: "Debes rellenar todos los campos!",
+        text: "Todos los campos son requeridos!😉",
+        icon: "warning",
+      });
     } else {
       //Aqui debo agregar mensaje de formulario enviado y limpiar los campos
-      alert('Formulario Enviado')
-      setApellido('')
-      setNombre('')
-      setDni('')
-      setEmail('')
+      setApellido("");
+      setNombre("");
+      setDni("");
+      setEmail("");
+
+      Swal.fire({
+        title: "Formulario Enviado!",
+        text: "Gracias por tu visita!🫡",
+        icon: "success",
+      });
     }
-  }
+  };
 
   return (
     <section className="contenedorForm">
