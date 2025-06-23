@@ -24,7 +24,7 @@ function App() {
         </Navbar>
       </header>
       <main className="my-5">
-        <h1 className="text-white text-center text-md-center text-xl-start w-75">Formulario</h1>
+        <h1 className="text-white text-center text-md-center text-xl-start w-75 mb-3">Formulario</h1>
         <div className="d-flex justify-content-center">
           <Formulario></Formulario>
           <div className="mx-4 contenedorImagen">
