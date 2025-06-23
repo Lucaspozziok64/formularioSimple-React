@@ -4,14 +4,20 @@ import "../App.css";
 import { useState } from "react";
 
 const Formulario = () => {
+
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
   const [dni, setDni] = useState("");
   const [email, setEmail] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log('Aqui debo validar los datos del form')
+  }
+
   return (
     <section className="container bg-secondary rounded-3">
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicNombre">
           <Form.Label>Nombre</Form.Label>
           <Form.Control
