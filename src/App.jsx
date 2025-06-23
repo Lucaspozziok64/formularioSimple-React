@@ -5,6 +5,9 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 
 function App() {
+
+  const Imagen = 'https://i.blogs.es/5c3d68/forms/1366_2000.jpg';
+
   return (
     <>
       <header>
@@ -21,8 +24,13 @@ function App() {
         </Navbar>
       </header>
       <main className="my-5">
-        <h1 className="text-white">Formulario</h1>
-        <Formulario></Formulario>
+        <h1 className="text-white text-center text-md-center text-xl-start w-75">Formulario</h1>
+        <div className="d-flex justify-content-center">
+          <Formulario></Formulario>
+          <div className="mx-4 contenedorImagen">
+            <img src={Imagen} alt="" />
+          </div>
+        </div>
       </main>
       <footer className="bg-dark text-white p-1 text-center">
         <p className="mb-0">&copy;Todos los derechos reservados</p>

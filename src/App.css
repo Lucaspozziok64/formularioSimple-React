@@ -17,8 +17,19 @@
   padding: 10px;
 }
 
+img {
+  width: 600px;
+  height: 100%;
+}
+
 @media (max-width: 767px) {
   .contenedorForm {
     width: 340px;
+  }
+}
+
+@media (max-width: 1090px)  {
+  .contenedorImagen {
+    display: none;
   }
 }
