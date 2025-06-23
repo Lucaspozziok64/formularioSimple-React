@@ -27,8 +27,8 @@ const Formulario = () => {
   }
 
   return (
-    <section className="container bg-secondary rounded-3">
-      <Form onSubmit={handleSubmit}>
+    <section className="contenedorForm">
+      <Form onSubmit={handleSubmit} className="formulario text-white">
         <Form.Group className="mb-3" controlId="formBasicNombre">
           <Form.Label>Nombre</Form.Label>
           <Form.Control

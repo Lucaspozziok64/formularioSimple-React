@@ -20,12 +20,13 @@ function App() {
           </Container>
         </Navbar>
       </header>
-      <main className="container my-5">
-        <h1 className="text-center text-white">Formulario</h1>
+      <main className="my-5">
+        <h1 className="text-white">Formulario</h1>
         <Formulario></Formulario>
       </main>
       <footer className="bg-dark text-white p-1 text-center">
-        <p>&copy;Todos los derechos reservados</p>
+        <p className="mb-0">&copy;Todos los derechos reservados</p>
+        <p className="mb-0">Desarrollado por <a href="https://github.com/Lucaspozziok64">Lucas Figueroa</a>👨‍💻</p>
       </footer>
     </>
   );
