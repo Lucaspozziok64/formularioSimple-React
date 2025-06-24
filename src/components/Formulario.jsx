@@ -14,11 +14,7 @@ const Formulario = () => {
     e.preventDefault();
 
     if (!nombre || !apellido || !dni || !email) {
-      Swal.fire({
-        title: "Debes rellenar todos los campos!",
-        text: "Todos los campos son requeridos!😉",
-        icon: "warning",
-      });
+      alert('Debes rellenar todos los campos')
     } else {
       //Aqui debo agregar mensaje de formulario enviado y limpiar los campos
       setApellido("");
@@ -26,11 +22,7 @@ const Formulario = () => {
       setDni("");
       setEmail("");
 
-      Swal.fire({
-        title: "Formulario Enviado!",
-        text: "Gracias por tu visita!🫡",
-        icon: "success",
-      });
+      alert('Datos Enviados')
     }
   };
 
